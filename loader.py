@@ -190,10 +190,25 @@ def main():
 
 	print(random.choice(list) + "                                   1. Download YouTube video\n")
 
-	print(random.choice(list) + "                                   2. mp4 to mp3")
-
+	print(random.choice(list) + "                                   2. mp4 to mp3\n")
 
 	choice = input(random.choice(list) + "  loader -> ")
+
+	if choice == 1:
+
+		download()
+
+	elif choice == 2:
+
+		convert()
+
+	else:
+
+		print(random.choice(list) + "  Invalid option, Quiting...")
+
+		exit(0)
+
+
 
 
 
