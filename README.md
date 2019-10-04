@@ -2,6 +2,10 @@
 
 Loader is a YouTube video/audio downloader
 
+## Supported Platform
+
+- Linux
+
 ## Installation
 
 `git clone https://github.com/iinc0gnit0/loader && cd loader && chmod +x * && sudo ./install.sh`
