@@ -26,6 +26,12 @@ Pull request are welcome as long as they aren't spammy
 
 ## Updates
 
+### v3.3
+
+- Fixed a few bugs
+
+- New UI
+
 ### v3.2
 
 - loader is created
