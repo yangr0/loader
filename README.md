@@ -18,6 +18,10 @@ Loader is a YouTube video/audio downloader
 
 `git clone https://github.com/iinc0gnit0/loader && cd loader && chmod +x * && sudo ./install.sh`
 
+## Usage
+
+`python3 loader.py`
+
 ## Credits
 
 Created by: inc0gnit0
@@ -39,6 +43,8 @@ Pull request are welcome as long as they aren't spammy
 - Fixed a few bugs
 
 - New UI
+
+- Fixed installation file
 
 ### v3.2
 
