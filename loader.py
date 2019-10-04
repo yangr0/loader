@@ -78,9 +78,9 @@ def main():
 
 	os.system("clear") # Clear the terminal #
 
-		# DOWNLOAD #
+	# DOWNLOAD #
 
-	def download()
+	def download():
 
 		link = input(random.choice(list) + "  Enter the link of the Youtube video(ex: www.youtube.com): ")
 
@@ -109,6 +109,27 @@ def main():
 		print("\n")
 
 		print(random.choice(list) + """  The vidoe will be save to the "loader" folder""")
+
+
+	# CONVERT #
+
+	def convert():
+
+		print(random.choice(list) + "  Please make sure the video is in this directory")
+
+		print("\n")
+
+		def convertion():
+
+			mp4 = input(random.choice(list) + "  Enter the full name of the mp4 file(ex: example.mp4): ")
+
+			print("\n")
+
+			mp3 = input(random.choice(list) + "  Enter the full name you the output to be(ex: example.mp3): ")
+
+			os.system("ffmpeg -i" + " " + mp4 + " " + mp3)
+
+		convertion()
 
 
 
@@ -172,7 +193,7 @@ def main():
 	time.sleep(0.1)
 	print(random.choice(list) + "                                             888")
 	time.sleep(0.1)
-	print(random.choice(list) + "                                         888888" + red + "                           v1")
+	print(random.choice(list) + "                                         888888" + red + "                           v3.1")
 	time.sleep(0.1)
 	print("\n")
 	print(random.choice(list) + "                                     Created by: inc0gnit0")
@@ -194,11 +215,11 @@ def main():
 
 	choice = input(random.choice(list) + "  loader -> ")
 
-	if choice == 1:
+	if choice in "1":
 
 		download()
 
-	elif choice == 2:
+	elif choice in "2":
 
 		convert()
 
