@@ -4,7 +4,7 @@ Loader is a YouTube video/audio downloader
 
 ## Requirements
 
-- Linux(Not included in installation file, obviously)
+- Linux (Not included in installation file, obviously)
 
 - Python 3.7+
 
