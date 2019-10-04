@@ -8,6 +8,8 @@ Loader is a YouTube video/audio downloader
 
 - Python 3.7+
 
+- pip3
+
 - ffmpeg
 
 - pytube
