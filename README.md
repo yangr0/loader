@@ -46,6 +46,8 @@ Pull request are welcome as long as they aren't spammy
 
 - Fixed installation file
 
+- Commented code
+
 ### v3.2
 
 - loader is created
