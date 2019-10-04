@@ -100,6 +100,12 @@ def main():
 
 			print(random.choice(list) + "  Connection error, please check your internet connection")
 
+			time.sleep(3)
+
+			os.system("clear")
+
+			exit(1)
+
 		vid = yt.streams.first()
 
 		try:
@@ -112,6 +118,12 @@ def main():
 
 			print(random.choice(list) + "  Errors occured")
 
+			time.sleep(3)
+
+			os.system("clear")
+
+			exit(1)
+
 		print("\n")
 
 		print(random.choice(list) + "  Download completed!")
@@ -119,6 +131,12 @@ def main():
 		print("\n")
 
 		print(random.choice(list) + """  The vidoe will be save to the "loader" folder""")
+
+		time.sleep(3)
+
+		os.system("clear")
+
+		main()
 
 
 
@@ -145,6 +163,11 @@ def main():
 			print("\n")
 
 			print(random.choice(list) + "                                Convertion completed!!")
+
+			time.sleep(3)
+
+			main()
+
 
 		convertion()
 
@@ -210,7 +233,7 @@ def main():
 	time.sleep(0.1)
 	print(random.choice(list) + "                                             888")
 	time.sleep(0.1)
-	print(random.choice(list) + "                                         888888" + red + "                                v3.3")
+	print(random.choice(list) + "                                         888888" + red + "                                v3.")
 	time.sleep(0.1)
 	print("\n")
 	print(random.choice(list) + "                                     Created by: inc0gnit0")
@@ -234,6 +257,10 @@ def main():
 
 	print("\n")
 
+	print(random.choice(list) + "                                           0. Exit")
+
+	print("\n")
+
 	choice = input(random.choice(list) + "                                          loader -> ")
 
 	if choice in "1":
@@ -243,6 +270,10 @@ def main():
 	elif choice in "2":
 
 		convert()
+
+	elif choice in "0":
+
+		exit(0)
 
 	else:
 
@@ -271,5 +302,9 @@ except KeyboardInterrupt: # Catch KeyboardInterruption errors #
 	print(random.choice(list) + "  Have a nice day!!")
 
 	print("\n")
+
+	time.sleep(3)
+
+	os.system("clear")
 
 	exit(1)
