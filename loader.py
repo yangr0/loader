@@ -20,7 +20,11 @@ except ImportError:
 
 	print("  You did not follow the instructions\n")
 
-	print("  Please run: ./install.sh")
+	print("  Please run: sudo ./install.sh")
+
+	exit(1)
+
+
 
 # COLORS #
 
@@ -74,13 +78,15 @@ def main():
 
 		time.sleep(0.1)
 
-
-
 	os.system("clear") # Clear the terminal #
+
+
 
 	# DOWNLOAD #
 
 	def download():
+
+		print("\n")
 
 		link = input(random.choice(list) + "  Enter the link of the Youtube video(ex: www.youtube.com): ")
 
@@ -89,6 +95,8 @@ def main():
 			yt = pytube.YouTube(link)
 
 		except:
+
+			print("\n")
 
 			print(random.choice(list) + "  Connection error, please check your internet connection")
 
@@ -99,6 +107,8 @@ def main():
 			vid.download()
 
 		except:
+
+			print("\n")
 
 			print(random.choice(list) + "  Errors occured")
 
@@ -111,9 +121,12 @@ def main():
 		print(random.choice(list) + """  The vidoe will be save to the "loader" folder""")
 
 
+
 	# CONVERT #
 
 	def convert():
+
+		print("\n")
 
 		print(random.choice(list) + "  Please make sure the video is in this directory")
 
@@ -127,7 +140,11 @@ def main():
 
 			mp3 = input(random.choice(list) + "  Enter the full name you the output to be(ex: example.mp3): ")
 
-			os.system("ffmpeg -i" + " " + mp4 + " " + mp3)
+			os.system("ffmpeg -i" + " " + mp4 + " " + mp3) # Command to convert #
+
+			print("\n")
+
+			print(random.choice(list) + "                                Convertion completed!!")
 
 		convertion()
 
@@ -193,7 +210,7 @@ def main():
 	time.sleep(0.1)
 	print(random.choice(list) + "                                             888")
 	time.sleep(0.1)
-	print(random.choice(list) + "                                         888888" + red + "                           v3.1")
+	print(random.choice(list) + "                                         888888" + red + "                                v3.3")
 	time.sleep(0.1)
 	print("\n")
 	print(random.choice(list) + "                                     Created by: inc0gnit0")
@@ -209,11 +226,15 @@ def main():
 	time.sleep(0.1)
 	print("\n\033[0m")
 
-	print(random.choice(list) + "                                   1. Download YouTube video\n")
+	print(random.choice(list) + "                                    1. Download YouTube video")
 
-	print(random.choice(list) + "                                   2. mp4 to mp3\n")
+	print("\n")
 
-	choice = input(random.choice(list) + "  loader -> ")
+	print(random.choice(list) + "                                          2. mp4 to mp3")
+
+	print("\n")
+
+	choice = input(random.choice(list) + "                                          loader -> ")
 
 	if choice in "1":
 
@@ -231,8 +252,6 @@ def main():
 
 
 
-
-
 # START #
 
 try:
@@ -241,10 +260,16 @@ try:
 
 		main()
 
-except KeyboardInterrupt:
+except KeyboardInterrupt: # Catch KeyboardInterruption errors #
 
 	print("\n")
 
-	print("KeyboardInterrupt detected, Exiting... \033[0m")
+	print("  KeyboardInterrupt detected, Exiting... \033[0m")
+
+	print("\n")
+
+	print(random.choice(list) + "  Have a nice day!!")
+
+	print("\n")
 
 	exit(1)
