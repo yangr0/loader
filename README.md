@@ -38,6 +38,10 @@ Pull request are welcome as long as they aren't spammy
 
 ## Updates
 
+### v3.5
+
+- Fixed showing errors
+
 ### v3.3
 
 - Fixed a few bugs
