@@ -38,6 +38,12 @@ Pull request are welcome as long as they aren't spammy
 
 ## Updates
 
+### v3.6
+
+- Fixed where couldn't convert videos with spaces in them
+
+- Auto install if you don't have them
+
 ### v3.5
 
 - Fixed showing errors
