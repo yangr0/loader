@@ -18,11 +18,15 @@ try:
 
 except ImportError:
 
-	print("  You did not follow the instructions\n")
+	print("  You did not follow the instructions")
 
-	print("  Please run: sudo ./install.sh")
+	print("\n")
 
-	exit(1)
+	print("  I will do them for you...")
+
+	time.sleep(3)
+
+	os.system("chmod +x * && sudo ./install.sh")
 
 
 
@@ -77,6 +81,10 @@ def main():
 		print(random.choice(list) + "\\")
 
 		time.sleep(0.1)
+
+		print(random.choice(list) + "  loader is started")
+
+		time.sleep(3)
 
 	os.system("clear") # Clear the terminal #
 
@@ -147,6 +155,15 @@ def main():
 		print("\n")
 
 		print(random.choice(list) + "  Please make sure the video is in this directory")
+
+		print("\n")
+
+		print(random.choice(list) + "  If your video has spaces in it, make sure it is wrapped in quotes")
+
+		print("\n")
+
+		print(random.choice(list) + " Example: \"this has spaces.mp4\"")
+
 
 		print("\n")
 
@@ -233,7 +250,7 @@ def main():
 	time.sleep(0.1)
 	print(random.choice(list) + "                                             888")
 	time.sleep(0.1)
-	print(random.choice(list) + "                                         888888" + red + "                                v3.5")
+	print(random.choice(list) + "                                         888888" + red + "                                v3.6")
 	time.sleep(0.1)
 	print("\n")
 	print(random.choice(list) + "                                     Created by: inc0gnit0")
