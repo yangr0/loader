@@ -50,6 +50,8 @@ white = "\u001b[37;1m"
 
 list = ["\u001b[31;1m", "\u001b[32;1m", "\u001b[36;1m", "\u001b[33;1m", "\u001b[35;1m", "\u001b[34;1m", "\u001b[37;1m"] # List of colors to chose from #
 
+pwd = os.getcwd
+
 
 
 # MAIN #
@@ -82,9 +84,13 @@ def main():
 
 		time.sleep(0.1)
 
-		print(random.choice(list) + "  loader is started")
+		os.system("clear")
 
-		time.sleep(3)
+	print(random.choice(list) + "  loader is starting")
+
+	time.sleep(3)
+
+
 
 	os.system("clear") # Clear the terminal #
 
@@ -148,28 +154,21 @@ def main():
 
 
 
-	# CONVERT #
+	# MP4 to MP3 #
 
-	def convert():
+	def mp4mp3():
 
-		print("\n")
-
-		print(random.choice(list) + "  Please make sure the video is in this directory")
+		print(random.choice(list) + "  If your file has spaces in it, make sure it is wrapped in quotes")
 
 		print("\n")
 
-		print(random.choice(list) + "  If your video has spaces in it, make sure it is wrapped in quotes")
-
-		print("\n")
-
-		print(random.choice(list) + " Example: \"this has spaces.mp4\"")
-
+		print(random.choice(list) + "  Example: \"this has spaces.mp4\"")
 
 		print("\n")
 
 		def convertion():
 
-			mp4 = input(random.choice(list) + "  Enter the full name of the mp4 file(ex: example.mp4): ")
+			mp4 = input(random.choice(list) + "  Enter the full path of the mp4 file(ex: /home/inc0gnit0/example.mp4): ")
 
 			print("\n")
 
@@ -180,6 +179,88 @@ def main():
 			print("\n")
 
 			print(random.choice(list) + "                                Convertion completed!!")
+
+			print("\n")
+
+			print(random.choice(list) + "                            File is saved to " + random.choice(list) + os.getcwd() + "\n" + random.choice(list) + mp3)
+
+			time.sleep(3)
+
+			main()
+
+
+		convertion()
+
+
+
+	# MP4 to WAV #
+
+	def mp4wav():
+
+		print(random.choice(list) + "  If your file has spaces in it, make sure it is wrapped in quotes")
+
+		print("\n")
+
+		print(random.choice(list) + "  Example: \"this has spaces.mp4\"")
+
+		print("\n")
+
+		def convertion():
+
+			mp4 = input(random.choice(list) + "  Enter the full path of the mp4 file(ex: /home/inc0gnit0/example.mp4): ")
+
+			print("\n")
+
+			wav = input(random.choice(list) + "  Enter the full name you want the output to be(ex: example.wav): ")
+
+			os.system("ffmpeg -i" + " " + mp4 + " " + wav) # Command to convert #
+
+			print("\n")
+
+			print(random.choice(list) + "                                Convertion completed!!")
+
+			print("\n")
+
+			print(random.choice(list) + "                            File is saved to " + random.choice(list) + os.getcwd() + "\n" + random.choice(list) + wav)
+
+			time.sleep(3)
+
+			main()
+
+
+		convertion()
+
+
+
+	# MP3 to WAV #
+
+	def mp3wav():
+
+		print(random.choice(list) + "  If your file has spaces in it, make sure it is wrapped in quotes")
+
+		print("\n")
+
+		print(random.choice(list) + "  Example: \"this has spaces.mp3\"")
+
+		print("\n")
+
+		def convertion():
+
+			mp3 = input(random.choice(list) + "  Enter the full path of the mp3 file(ex: /home/inc0gnit0/example.mp3): ")
+
+			print("\n")
+
+			wav = input(random.choice(list) + "  Enter the full name you want the output to be(ex: example.wav): ")
+
+			os.system("ffmpeg -i" + " " + mp3 + " " + wav) # Command to convert #
+
+			print("\n")
+
+			print(random.choice(list) + "                                Convertion completed!!")
+
+			print("\n")
+
+			print(random.choice(list) + "                            File is saved to " + random.choice(list) + os.getcwd() + "\n" + random.choice(list) + wav)
 
 			time.sleep(3)
 
@@ -250,7 +331,7 @@ def main():
 	time.sleep(0.1)
 	print(random.choice(list) + "                                             888")
 	time.sleep(0.1)
-	print(random.choice(list) + "                                         888888" + red + "                                v3.6")
+	print(random.choice(list) + "                                         888888" + red + "                                v4.0")
 	time.sleep(0.1)
 	print("\n")
 	print(random.choice(list) + "                                     Created by: inc0gnit0")
@@ -264,7 +345,11 @@ def main():
 	print("\n")
 	print(random.choice(list) + "                                     Instagram: i.nc0gnit0")
 	time.sleep(0.1)
-	print("\n\033[0m")
+	print("\033[0m")
+
+	print(random.choice(list) + "=========================================================================================================")
+
+	print("")
 
 	print(random.choice(list) + "                                    1. Download YouTube video")
 
@@ -274,11 +359,19 @@ def main():
 
 	print("\n")
 
-	print(random.choice(list) + "                                           0. Exit")
+	print(random.choice(list) + "                                          3. mp4 to wav")
 
 	print("\n")
 
-	choice = input(random.choice(list) + "                                          loader -> ")
+	print(random.choice(list) + "                                          4, mp3 to wav")
+
+	print("\n")
+
+	print(random.choice(list) + "                                             0. Exit")
+
+	print("\n")
+
+	choice = input(random.choice(list) + "                                            loader -> ")
 
 	if choice in "1":
 
@@ -286,9 +379,23 @@ def main():
 
 	elif choice in "2":
 
-		convert()
+		mp4mp3()
+
+	elif choice in "3":
+
+		mp4wav()
+
+	elif choice in "4":
+
+		mp3wav()
 
 	elif choice in "0":
+
+		print("\n")
+
+		print(random.choice(list) + "  Thank you for using loader! Have a nice day")
+
+		print("\n")
 
 		exit(0)
 
@@ -312,11 +419,11 @@ except KeyboardInterrupt: # Catch KeyboardInterruption errors #
 
 	print("\n")
 
-	print("  KeyboardInterrupt detected, Exiting... \033[0m")
+	print("  KeyboardInterrupt detected, Exiting...")
 
 	print("\n")
 
-	print(random.choice(list) + "  Have a nice day!!")
+	print(random.choice(list) + "  Have a nice day!! \033[0m")
 
 	print("\n")
 
