@@ -38,6 +38,14 @@ Pull request are welcome as long as they aren't spammy
 
 ## Updates
 
+### v4.0
+
+- Added mp4 to wav
+
+- Added mp3 to wav
+
+- New UI
+
 ### v3.6
 
 - Fixed where couldn't convert videos with spaces in them
