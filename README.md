@@ -28,9 +28,13 @@ Created by: inc0gnit0
 
 GitHub: [iinc0gnit0](https://github.com/iinc0gnit0)
 
-Instagram: [i.nc0gnit0](https://instagram.com/i.nc0gnit0)
+Instagram: [inc0gnit0.offical](https://instagram.com/inc0gnit0.offical)
 
 Email: iinc0gnit0@pm.me
+
+## Bugs and Problems
+
+Message me on [Instagram](https://instagram.com/inc0gnit0.offical) or email me iinc0gnit0@pm.me
 
 ## Pull Request
 
