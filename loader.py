@@ -104,21 +104,7 @@ def main():
 
 		link = input(random.choice(list) + "  Enter the link of the Youtube video(ex: www.youtube.com): ")
 
-		try:
-
-			yt = pytube.YouTube(link)
-
-		except:
-
-			print("\n")
-
-			print(random.choice(list) + "  Connection error, please check your internet connection")
-
-			time.sleep(3)
-
-			os.system("clear")
-
-			exit(1)
+		yt = pytube.YouTube(link)
 
 		vid = yt.streams.first()
 
